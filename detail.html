@@ -12,9 +12,9 @@
         
 <!--****************************************** HEADER DIV ********************************************-->
 <header  class="Header-Div">
-    <img class="logo-img" src="assests/images/logo.png" alt="logo" width="150px" height="200px"/>
-    <a class="Login-Icon" href="Login.html" target="_blank">Login</a>
-    </Header>
+    <a href="index.html" ><img class="logo-img" src="assests/images/logo.png" alt="logo" width="150px" height="200px"/></a>
+    <a class="Login-Icon" href="Login.html" >Login</a>
+
 </header>
 <!--****************************************** CONTENT-Div ********************************************-->
         <div class="Contact-Div">
@@ -25,6 +25,29 @@
                 <div class="Book-Botton">
                 <a href="payment.html">Book Now</a>
                 </div>
+
+                <form action="payment.html">
+                    <div class="booking-details">
+                    <label for="Aduits">Aduits:</label>
+                    <input type="number" name="Aduits" id="Aduits" min="1" step="1" required>
+                    <br>
+                    <label for="Name">Name:</label>
+                    <input type="text" class="Name">
+                    <br>
+                    <label for="From-date" >From Date:</label>
+                    <input type="date" required>
+                    <br>
+                    <label for="To-date">To Date:</label>
+                    <input type="date" required>
+                    <br>
+                    <label for="Total">Total:</label>
+                    <input type="text" class="total" disabled required>
+                    <br>
+                    <input type="submit" value="Book Now">
+                </div>
+
+
+                </form>
                 <h2>Radisson Blu Hotel</h2>
 
                 <h6>RATING</h6>
