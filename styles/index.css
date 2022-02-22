@@ -1,0 +1,20 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+}
+.logo-img {
+    width: 60px;
+    height: 60px;
+}
+.city-img {
+    display: inline;
+    max-width: 150px;
+     height: 150px;
+}
+
+.Social-media-logo {
+    display: inline;
+   max-width: 22px;
+    height: 20px;
+
+}

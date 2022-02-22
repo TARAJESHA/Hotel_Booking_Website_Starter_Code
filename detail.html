@@ -3,29 +3,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/detail.css" rel="stylesheet">
 
-    <title>Detail</details></title>
+    <title>Detail</title>
     
 </head>
 <body>
     <div class="container-fluid px-0">
         
 <!--****************************************** HEADER DIV ********************************************-->
-<header  class="Header-Div">
-    <a href="index.html" ><img class="logo-img" src="assests/images/logo.png" alt="logo" width="150px" height="200px"/></a>
+<header class="Header-Div">
+    <a href="index.html"><img class="logo-img" src="assests/images/logo.png" alt="logo"/></a>
     <a class="Login-Icon" href="Login.html" >Login</a>
-
 </header>
 <!--****************************************** CONTENT-Div ********************************************-->
         <div class="Contact-Div">
-            <li><a type="dot" href="list.html">List Veiw</a></li>
-            <li><a href="list.html">Map Veiw</a></li>
-            <div class="Radisson-Blu-Hotel">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-                <div class="Book-Botton">
-                <a href="payment.html">Book Now</a>
-                </div>
-
+            <div id="Radisson-Blu-Hotel">
+                <img class="Radisson-Blu-Hotel" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                
+            </div>
                 <form action="payment.html">
                     <div class="booking-details">
                     <label for="Aduits">Aduits:</label>
@@ -43,8 +40,10 @@
                     <label for="Total">Total:</label>
                     <input type="text" class="total" disabled required>
                     <br>
-                    <input type="submit" value="Book Now">
-                </div>
+                    <div class="Book-Botton">
+                        <a href="payment.html"><input type="submit" value="Book Now"></a>
+                    </div>
+                     </div>
 
 
                 </form>
@@ -65,25 +64,24 @@
         </div>
 
 <!--****************************************** FOOTER DIV ********************************************-->
-        <footer>
-        <div class="Footer-Div">
-            <div class="Contact Us">
-                <a href="contact.html">Contact Us</a>
-            </div>
-            
-            <div class="Social-media-logo" >
-                <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" width="22px" height="20px"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" width="22px" height="20px"></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" width="22px" height="20px"></a>
-            </div>
-            <div class="copy-right-test">
-                <P>&copy; 2020 ROOM SEARCH PVT LTD.</P>
-
-            </div>
-
+<footer>
+    <div class="Footer-Div">
+        <div class="Contact Us">
+            <a href="contact.html">Contact Us</a>
         </div>
-    </footer>
+        
+
+            <a href="https://www.facebook.com/" target="_blank"><img class="Social-media-logo" src="assests/images/facebook.png"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="Social-media-logo" src="assests/images/instagram.png" ></a>
+            <a href="https://twitter.com" target="_blank"><img class="Social-media-logo" src="assests/images/twitter.png" ></a>
+            <br>
+            &copy; 2020 ROOM SEARCH PVT LTD.
+
+
 
     </div>
+</footer>
+
+</div>
 </body>
 </html>
