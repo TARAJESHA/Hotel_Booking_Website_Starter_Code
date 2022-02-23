@@ -2,3 +2,23 @@
     height: 500px;
     width: 500px;
 }
+#Radisson-Blu-Hotel {
+    background-color: rgb(132,136,139);
+    max-width: 50%;
+    margin: 2% auto;
+
+}
+.customer_details{
+    margin: 2%;
+
+}
+.Tariff-Breakdown-content {
+    margin: 2%;
+    border-style: solid;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+   
+}

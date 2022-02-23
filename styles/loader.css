@@ -1,0 +1,14 @@
+.loader {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 12px #f3f3f3 solid;
+    border-top: 12px #444 solid;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+}
+.loader-container {
+    height: 100vh;
+    position: relative;
+  }

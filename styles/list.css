@@ -2,3 +2,8 @@
     width: 250px;
     height: 200px;
 }
+#hotel-name {
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
+}
