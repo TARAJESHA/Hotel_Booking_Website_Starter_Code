@@ -45,12 +45,10 @@ body {
   height: 14rem;
 }
 
-
 .img-container {
   /* padding: 4%; */
   border-radius: 15%;
 }
-
 .img-place {
   border-radius: 15%;
   box-shadow: gray 10px 10px 10px;

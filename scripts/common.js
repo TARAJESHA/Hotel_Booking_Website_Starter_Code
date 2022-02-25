@@ -18,3 +18,5 @@ function closeContactUs(e) {
   e.preventDefault();
   getInTouchModal.style.display = "none";
 }
+
+

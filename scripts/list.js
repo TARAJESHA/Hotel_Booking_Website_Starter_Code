@@ -20,9 +20,8 @@ function handleView(event) {
     document
       .getElementsByClassName("map-view-btn")[0]
       .classList.add("btn-primary");
-
-    listView.style.display = "none";
-    mapView.style.display = "initial";
+      listView.style.display = "none";
+      mapView.style.display = "initial";
   }
 }
 
