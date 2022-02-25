@@ -1,24 +1,54 @@
-.Radisson-Blu-Hotel-payment{
-    height: 500px;
-    width: 500px;
-}
-#Radisson-Blu-Hotel {
-    background-color: rgb(132,136,139);
-    max-width: 50%;
-    margin: 2% auto;
+.hotel_description {
+  background-color: rgb(132, 136, 139);
 
+  max-width: 70%;
+  max-height: 20%;
+  margin: 2% auto;
 }
-.customer_details{
-    margin: 2%;
 
+.hotel-big-img {
+  width: 240px;
+  height: 216px;
 }
-.Tariff-Breakdown-content {
-    margin: 2%;
-    border-style: solid;
-    border-radius: 5px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 2%;
-    padding-left: 2%;
-   
+
+.pay-now {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.customer_details {
+  margin: 1% 0;
+}
+
+.Content-Div {
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hotel-description-content {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 3rem 0 2rem;
+}
+
+.payment_details strong,
+.tariff strong {
+  font-family: cursive;
+}
+
+.payment_details {
+  border: 1px solid black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #bc8f8f;
+}
+
+.pay-now {
+  pointer-events: none;
 }

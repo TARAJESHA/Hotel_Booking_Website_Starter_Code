@@ -1,14 +1,27 @@
 .loader {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    border: 12px #f3f3f3 solid;
-    border-top: 12px #444 solid;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border: 12px #f3f3f3 solid;
+  border-top: 12px #444 solid;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: spin 2s linear infinite;
 }
-.loader-container {
-    height: 100vh;
-    position: relative;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-container {
+  height: 100vh;
+  position: relative;
+}
