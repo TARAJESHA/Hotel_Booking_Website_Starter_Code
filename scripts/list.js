@@ -25,3 +25,5 @@ function handleView(event) {
     mapView.style.display = "initial";
   }
 }
+
+
