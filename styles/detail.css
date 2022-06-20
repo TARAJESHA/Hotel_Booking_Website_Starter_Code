@@ -1,80 +1,100 @@
-.Content-Div {
-  margin-top: 2%;
-  margin-left: 4%;
-  margin-bottom: 2%;
-}
-
-.hotel-big-img {
-  margin-right: 4%;
-
-  max-height: 360px;
-}
-.booking-form {
-  margin-bottom: 1%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  height: 400px;
-}
-.hotel-description {
-  margin-right: 4%;
-  margin-top: 1%;
-}
-
-.hotel-description p,
-.hotel-description ul {
-  font-weight: 400;
-}
-
-.hotel-booking {
-  height: 400px;
-  max-width: 98%;
-
+#slideshow-container, #booking-form {
+  padding: 1%;
+  text-align: center;
   border: 1px solid black;
+  max-height: 400px;
 }
-
-.hotel-img-div {
-  height: 400px;
-  min-width: 65%;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px black solid;
+#slideshow-container {
+  margin-left: 2%;
+  border-right: none;
+  flex-grow: 3;
+  max-width: 60%;
 }
-
-.hotel-big-img {
+#booking-form {
+  margin-right: 2%;
+  flex-grow: 1;
+}
+#hotel-description {
+  margin: 2%;
+}
+#detail-container {
+  margin-top:7%;
+  margin-bottom: 7%;
+}
+#slideshow-booking {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.slider-image {
   max-height: 350px;
-
-  /* margin-top: 1rem; */
+}
+.outer {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+#book-now {
+  margin-top: 5%;
+}
+.inner {
+  width: 60%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+height: 100px;
+width: 100px;
+background-image: none !important;
+}
+.carousel-control-next-icon:after
+{
+content: '>';
+font-size: 55px;
+color: black;
 }
 
-.booking-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: left;
-  padding: 1rem 2rem;
+.carousel-control-prev-icon:after {
+content: '<';
+font-size: 55px;
+color: black;
 }
 
-.submit {
-  grid-column: 2/-1;
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 0 !important;
+}
+.carousel-image {
+  max-height: 370px;
 }
 
-#from_date,
-#to_date {
-  justify-self: stretch;
-}
+@media screen and (max-width: 576px) {
 
-h6 {
-  font-family: cursive;
-  font-weight: 500;
-  letter-spacing: -0.04rem;
-}
+  #slideshow-container {
+      margin-left: 0%;
+      max-width: 100%;
+      border-right: 1px solid black;
+  }
 
-.book-now {
-  background-color: #e0e0e0;
-}
+  #booking-form {
+      width: 100%;
+  }
 
-.book-now:hover,
-.book-now:focus {
-  color: white !important;
+  #detail-container {
+      margin-top: 20%;
+      margin-bottom: 22%;
+  }
+
+  #slideshow-booking {
+      flex-direction: column;
+  }
+
+  .slider-image {
+      max-height: 250px;
+      width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #detail-container {
+      margin-top: 10%;
+  }
 }

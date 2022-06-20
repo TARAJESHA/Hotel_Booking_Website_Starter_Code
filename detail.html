@@ -1,243 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <title>Detail</title>
+    <link rel="stylesheet" href="styles/loader.css">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/detail.css"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      integrity="undefined"
       crossorigin="anonymous"
     />
-    <link href="styles/common.css" rel="stylesheet" />
-    <link href="styles/detail.css" rel="stylesheet" />
-    <title>Detail</title>
-  </head>
-  <body>
-    <body>
-      <div class="container-fluid">
-        <header
-          class="Header-Div d-flex justify-content-between align-items-center"
-        >
-          <a href="index.html">
-            <img
-              class="logo-img"
-              src="assests/images/logo.png"
-              alt="logo"
-              width="200px"
-              height="150px"
-            />
-          </a>
-
-          <button
-            type="button"
-            class="login-btn btn btn-light me-2"
-            onclick="handleLogin()"
-          >
-            Login
-          </button>
-        </header>
-        <div class="Content-Div">
-          <div class="hotel-booking d-flex">
-            <div class="hotel-img-div d-flex">
-              <img
-                class="hotel-big-img img-fluid"
-                src="assests/images/images_places/Radisson-Blu.jpg"
-                alt="Radisson
-          Blu"
-              />
-            </div>
-            <div class="payment-form d-flex justify-items-center">
-              <form action="payment.html" class="my-2 booking-form">
-                <label for="Adults">Adults:</label>
-                <input
-                  type="number"
-                  id="Adults"
-                  name="Adults"
-                  min="1"
-                  oninvalid="this.setCustomValidity('value must be greater than or equal to 1')"
-                  oninput="setCustomValidity('')"
-                  step="1"
-                  required
-                />
-                
-                <label for="cust_name">Name:</label>
-                <input
-                  type="text"
-                  id="cust_name"
-                  name="cust_name"
-                  autocomplete="no"
-                  required
-                />
-                <label for="from_date">From Date:</label>
-                <input type="date" id="from_date" name="from_date" required />
-                <label for="to_date">To Date:</label>
-                <input type="date" id="to_date" name="to_date" required />
-                <label for="total">Total:</label>
-                <input type="text" id="total" name="total" disabled required />
-
-                <input type="submit" value="Book now" class="btn btn-success book-now text-success"/>
-              </form>
-            </div>
-          </div>
-
-          <div class="hotel-description">
-            <h2>Radisson Blu Hotel</h2>
-
-            <h6>RATING</h6>
-            <p>5 star</p>
-            <h6>AMENITIES</h6>
-
-            <ul>
-              <li>Room Service</li>
-              <li>Restaurant</li>
-              <li>Business Center</li>
-              <li>Fitness Center</li>
-              <li>Pool</li>
-            </ul>
-
-            <h6>DESCRIPTION</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              dolore quis, ut mollitia sed incidunt, dolorum eius ducimus
-              numquam soluta voluptas magnam hic sapiente culpa, quasi
-              perferendis! Expedita, animi suscipit.
-            </p>
-          </div>
-        </div>
-        <footer
-          class="Footer-Div d-flex align-items-center justify-content-between"
-        >
-          <button
-            type="button"
-            class="btn btn-info d-flex align-items-center justify-content-center text-light"
-            onclick="handleContactUs(this)"
-          >
-            Contact Us
-          </button>
-          <p id="copywright" class="my-0">@2020 ROOM SEARCH PVT LTD.</p>
-          <div class="social-media-imgs-div d-flex align-items-center">
-            <a href="https://www.facebook.com/" target="_blank">
-              <img
-                class="social-media-imgs"
-                src="assests/images/facebook.png"
-                alt="Facebook"
-              />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img
-                class="social-media-imgs"
-                src="assests/images/instagram.png"
-                alt="Facebook"
-              />
-            </a>
-            <a href="https://twitter.com/" target="_blank">
-              <img
-                class="social-media-imgs"
-                src="assests/images/twitter.png"
-                alt="Facebook"
-              />
-            </a>
-
-            <div class="modal login-modal" tabindex="-1">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Please Login</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-  
-                      onclick="closeLogin(event)"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="form-control py-4" onsubmit="closeLogin(event)">
-                      <div class="row">
-                        <div class="col">
-                          <label for="email">Username </label>
-                        </div>
-                        <div class="col-8">
-                          <input type="email" name="email" required />
-                        </div>
-                      </div>
-                      <br />
-                      <div class="row">
-                        <div class="col">
-                          <label for="password">Password</label>
-                        </div>
-                        <div class="col-8">
-                          <input
-                            type="password"
-                            name="password"
-                            autocomplete="off"
-                            required
-                          />
-                        </div>
-                      </div>
-                    
-                  </div>
-                  <div class="modal-footer d-flex justify-content-center">
-                    <input type="submit" value="login" class="btn btn-primary"/>
-                  </div>
-                </form>
-                </div>
-              </div>
-            </div>
-  
-            <div class="modal get-in-touch" tabindex="-1">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Get in touch</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-  
-                      onclick="closeContactUs(event)"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="form-control" onsubmit="closeContactUs(event)">
-                      <p>Thank you for reaching out!!!</p>
-                      <p>Please enter your email and we will get back to you.</p>
-                      <div class="row">
-                        <div class="col">
-                          <label for="email">Username </label>
-                        </div>
-                        <div class="col-8">
-                          <input type="email" name="email" required />
-                        </div>
-                      </div>
-                      
-                    
-                  </div>
-                  <div class="modal-footer d-flex justify-content-end">
-                    <input type="submit" value="submit" class="btn btn-primary"/>
-                  </div>
-                </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-   
-      <script src="scripts/common.js"></script>
-    <script src="scripts/detail.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="undefined"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+  </head>
+  <body class="body">
+    <div id="loader"></div>
+    <div class="main-container">
+      <header class="header-footer" id="header"></header>
+
+      <div id="detail-container">
+          <div id="slideshow-booking">
+              <div id="slideshow-container">
+                  <div id="carousel-controls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner" id="carousel-parent"></div>
+                      <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+
+              <div id="booking-form">
+                  <form action="payment.html" method="get" autocomplete="off">
+                      <div class="outer">
+                          <label for="adult">Adults:</label>
+                          <input class="inner" type="number" name="adult" id="adult" value="1" min="1" oninput="updatePrice()" required/>
+                      </div>
+
+                      <div class="outer">
+                          <label for="name">Name:</label>
+                          <input class="inner" type="text" name="name" id="name" required/>
+                      </div>
+
+                      <div class="outer">
+                          <label for="fromDate">From Date:</label>
+                          <input class="inner" type="date" name="fromDate" id="fromDate" oninput="updatePrice()" required/>
+                      </div>
+
+                      <div class="outer">
+                          <label for="toDate">To Date:</label>
+                          <input class="inner" type="date" name="toDate" id="toDate" oninput="updatePrice()" required/>
+                      </div>
+
+                      <div class="outer">
+                          <label for="price">Total:</label>
+                          <input class="inner" type="text" name="price" id="price" readonly/>
+                          <input class="inner" type="hidden" id="id" name="id">
+                      </div>
+
+                      <div>
+                          <input type="submit" class="btn btn-outline-success" value="Book Now" id="book-now"/>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div id="hotel-description">
+              <h2 id="hotel-name"></h2>
+              <h5 class="heading">RATING</h5>
+              <div id="rating">
+                  <span class="fa fa-star checked" id="1"></span>
+                  <span class="fa fa-star checked" id="2"></span>
+                  <span class="fa fa-star checked" id="3"></span>
+                  <span class="fa fa-star checked" id="4"></span>
+                  <span class="fa fa-star checked" id="5"></span>
+              </div>
+              <h5 class="heading">AMENITIES</h5>
+              <ul id="amenities"></ul>
+              <h5 class="heading" id="description">DESCRIPTION</h5>
+          </div>
+      </div>
+
+      <footer class="header-footer" id="footer"></footer>
+  </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/detail.js"></script>
   </body>
 </html>
